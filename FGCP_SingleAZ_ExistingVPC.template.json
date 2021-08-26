@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v7.1) AWS CFT to deploy a FGCP based Active-Passive HA solution with two FortiGates in two AZs",
+	"Description": "(v7.2) AWS CFT to deploy a FGCP based Active-Passive HA solution with two FortiGates in two AZs",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -375,7 +375,9 @@
 								{
 									"Effect": "Allow",
 									"Action": [
-										"ec2:Describe*",
+										"ec2:DescribeInstances",
+										"ec2:DescribeRouteTables",
+										"ec2:DescribeAddresses",
 										"ec2:AssociateAddress",
 										"ec2:AssignPrivateIpAddresses",
 										"ec2:UnassignPrivateIpAddresses",
