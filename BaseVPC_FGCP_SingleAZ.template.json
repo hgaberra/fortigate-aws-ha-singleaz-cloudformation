@@ -58,7 +58,7 @@
 		"TgwAttachSubnet": {
 			"Type": "String",
 			"Default": "10.0.4.0/24",
-			"Description": "Provide a network CIDR for TgwAttachSubnet"
+			"Description": "[Ignore if TgwAttach is No] Provide a network CIDR for TgwAttachSubnet"
 		}
 	},
 	"Conditions": {
